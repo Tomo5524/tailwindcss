@@ -2504,4 +2504,16 @@ export let corePlugins = {
   content: createUtilityPlugin('content', [
     ['content', ['--tw-content', ['content', 'var(--tw-content)']]],
   ]),
+  backfaceVisibility: ({ addUtilities }) => {
+    addUtilities({
+      '.backface-visibility-hidden': { 'backface-visibility': 'hidden' },
+      '.backface-visibility-visible': { 'backface-visibility': 'visible' },
+    })
+  },
+  webkitFontSmoothing: ({ addUtilities }) => {
+    addUtilities({
+      '.webkit-font-smoothing': { '-webkit-font-smoothing': 'subpixel-antialiased' },
+    })
+  },
+ 
 }
