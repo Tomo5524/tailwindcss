@@ -2515,5 +2515,4 @@ export let corePlugins = {
       '.webkit-font-smoothing': { '-webkit-font-smoothing': 'subpixel-antialiased' },
     })
   },
- 
 }
